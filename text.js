@@ -58,11 +58,18 @@ function runWhileLoop() {
         "number" times to the string "output". For example,
         if "number" is 5, then output should be "AAAAA".
 
-        (Or for a challenge, concatenate the first "number" letters of the alphabet!)
+        (Or for a challenge, concatenate the first "number"
+        letters of the alphabet!)
     */
 
+    while(number > 0){
+        output = output+'A';
+        $("#while-result").text(output);
+        number--;
+    }
 
-    $("#while-result").text(output);
+
+  // $("#while-result").text(output);
 }
 
 
@@ -75,7 +82,14 @@ function runForLoop() {
         into the variable "sum".
     */
 
-    $("#for-result").text(sum);
+    for (var x =0; x<number; x++){
+
+        $("#for-result").text(sum);
+
+    }
+
+
+ //   $("#for-result").text(sum);
 }
 
 
@@ -88,7 +102,16 @@ function runDoWhileLoop() {
         "number" to the string "output". For example, if "number"
         is 5, then output should be "12345".
     */
+     var cnt = 1;
+    do{
+        $("#do-while-result").text(output);
+
+       cnt+=cnt;
+
+    }   while (cnt < number);
 
 
-    $("#do-while-result").text(output);
+
+
+  //  $("#do-while-result").text(output);
 }
