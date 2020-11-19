@@ -45,6 +45,12 @@ function runLoops() {
 
 
 
+    if (document.getElementById('for-loop').checked) {
+        runForLoop();
+        alert("test");
+    }
+
+
 
 }
 

@@ -26,7 +26,7 @@ $(document).ready(function () {
 
 
 
-        while (num.length) {
+        while (num.length > 0) {
 
             addImageToDiv("#while-loop");
 
@@ -52,7 +52,7 @@ $(document).ready(function () {
             addImageToDiv("#do-while-loop");
             num--;
 
-        }   while (num.length);
+        }   while (num.length >0);
 
 
 
